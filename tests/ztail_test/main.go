@@ -18,8 +18,8 @@ func main() {
 		panic(err)
 	}
 	table := [][]string{
-		{"-c", "23", "../../../../piscine-go/ztail/main.go", file1},
-		{"-c", "13", "../../../../piscine-go/ztail/main.go", "fjksdsf", file2},
+		{"-c", "23", "../../../piscine-go/ztail/main.go", file1},
+		{"-c", "13", "../../../piscine-go/ztail/main.go", "fjksdsf", file2},
 		{"-c", "5", file1, file2},
 		{"-c", "1", "fjksdsf"},
 		{"-c", "1", file1, file2},
