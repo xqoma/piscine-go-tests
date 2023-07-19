@@ -3,18 +3,18 @@ package main
 import (
 	"io/ioutil"
 	"os"
-	"path"
+	piscinegotests "piscine-go-tests"
 	"piscine-go-tests/lib/challenge"
 	"piscine-go-tests/lib/chars"
 	"piscine-go-tests/lib/random"
 )
 
 func main() {
+	piscinegotests.ClearBinaries()
+
 	file1 := "quest8.txt"
 	file2 := "quest8T.txt"
-	binariesDir := path.Join(os.TempDir(), "binaries")
 
-	os.RemoveAll(binariesDir)
 	if err := ioutil.WriteFile(file1, []byte(random.Str(chars.Words, 13)+"\n"), os.ModePerm); err != nil {
 		panic(err)
 	}
